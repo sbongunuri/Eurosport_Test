@@ -14,24 +14,21 @@ opportunity to explain what you would add.
 
 3. Please describe yourself using JSON. 
 
-{ 
-   "firstname":"sreekanth reddy",
-   "lastname":"bongunuri",
-   "age":35,
-   "nationality":"British",
-   "livesin":"Grays Essex",
-   "passions":[  
-      "Programming",
-      "Teaching others"
-   ],
-   "interests":[  
-      "Education",
-      "Sports"
-   ],
-   "dreams":[  
-      "To make this world a better place!"
-   ],
-   "believes":[  
-      "That we should all have a chance in life, we should not be judged because of our color, ethnicity and educational background!"
-   ]
+{
+	"firstname": "sreekanth reddy",
+	"lastname": "bongunuri",
+	"BirthDate": "05-09-1983",
+	"age": 35,
+	"nationality": "British",
+	"livesin": "Grays Essex",
+	"profession": "IT Consultant",
+	"Limited Company": "Bongunuri Limited",
+	"passions": [
+		"Programming",
+		"Teaching others"
+	],
+	"interests": [
+		"Education",
+		"Sports"
+	]
 }
