@@ -23,16 +23,16 @@ Now clone the project with the http keys https://github.com/sbongunuri/Eurosport
 C:\workspace>git clone https://github.com/sbongunuri/Eurosport_Test.git
 
 Once the project is cloned cd in to the directory and run the below command to install the maven dependencies
-C:\workspace\Eurosport_Test\Eurosport_Tennis_Streaming>mvn clean install -DskipTests=true
+C:\workspace\Eurosport_Test>mvn clean install -DskipTests=true
 
                       The above command will download all the dependencies specfied in pom.xml
 
 Now run the tests using the below command
-C:\workspace\Eurosport_Test\Eurosport_Tennis_Streaming>mvn clean test
+C:\workspace\Eurosport_Test>mvn clean test
 
 
 In case the tests the failing due to chrome driver issues, please udpate the chrome driver or downgrade it.
 
-C:\workspace\Eurosport_Test\Eurosport_Tennis_Streaming\src\main\resources\chrome_driver
+C:\workspace\Eurosport_Test\src\main\resources\chrome_driver
  
               The above command will run all the tests by default.
