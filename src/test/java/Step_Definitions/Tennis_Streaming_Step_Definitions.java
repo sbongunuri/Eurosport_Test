@@ -3,11 +3,11 @@ package Step_Definitions;
 import core.CucumberPageWrapper;
 import core.Tennis_Video_Page;
 import cucumber.api.DataTable;
+import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.junit.After;
 import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -20,6 +20,9 @@ public class Tennis_Streaming_Step_Definitions {
 
     @Autowired
     Tennis_Video_Page tennis_video_page ;
+
+    @Autowired
+    CucumberPageWrapper cucumberPageWrapper;
 
    
     @Given("^I am Eurosport Customer$")
@@ -118,6 +121,10 @@ public class Tennis_Streaming_Step_Definitions {
         }
     }
 
-
+    @After
+    public void tearDown()
+    {
+        cucumberPageWrapper.driver().quit();
+    }
 
 }

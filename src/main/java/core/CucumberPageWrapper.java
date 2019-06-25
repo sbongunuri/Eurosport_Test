@@ -54,14 +54,7 @@ public class CucumberPageWrapper  {
             return element.isDisplayed() ? element : null;
         };
     }
-
-
-    @PreDestroy
-    public void cleanUp()
-    {
-        driver.close();
-
-    }
+    
 
 
 }
