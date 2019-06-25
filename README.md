@@ -30,9 +30,16 @@ C:\workspace\Eurosport_Test>mvn clean install -DskipTests=true
 Now run the tests using the below command
 C:\workspace\Eurosport_Test>mvn clean test
 
+The above command will run all the tests by default.
+
 
 In case the tests the failing due to chrome driver issues, please udpate the chrome driver or downgrade it.
 
-C:\workspace\Eurosport_Test\src\main\resources\chrome_driver
+Currently chomre driver used by tests for chrome 74
+https://chromedriver.storage.googleapis.com/74.0.3729.6/chromedriver_win32.zip
+
+If you have chrome 76 please download below chrome driver and replace it in the  (C:\workspace\Eurosport_Test\src\main\resources\chrome_driver)
+https://chromedriver.storage.googleapis.com/76.0.3809.25/chromedriver_win32.zip
+
  
-              The above command will run all the tests by default.
+              
