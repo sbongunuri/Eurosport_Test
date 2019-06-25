@@ -7,8 +7,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/features",tags={"@Tennis_Videos"},monochrome = true, plugin = {
-        "pretty", "html:target/site/cucumber-report/",
-        "json:target/cucumber-report/cucumber.json"}, glue="Step_Definitions")
+        "pretty", "html:target/cucumber-report/",
+        "json:target/cucumber-reports/Cucumber.json"}, glue="Step_Definitions")
 
 
 public class Test_Runner_Class {

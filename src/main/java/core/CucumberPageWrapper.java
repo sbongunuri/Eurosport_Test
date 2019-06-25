@@ -54,7 +54,7 @@ public class CucumberPageWrapper  {
             return element.isDisplayed() ? element : null;
         };
     }
-    
+
 
 
 }
